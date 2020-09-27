@@ -11,7 +11,7 @@ const unirest = require("unirest");
       })
       .send({
         "title": "Hello, World!",
-        "published": false,
+        "published": true,
         "body_markdown": "Hello DEV, this is my first post",
         "tags": [
           "discuss",
