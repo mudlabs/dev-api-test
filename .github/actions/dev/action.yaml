@@ -1,5 +1,12 @@
 name: Dev Post
 description: Write and post to Dev.to
+inputs:
+  key:
+    required: true
+    description: 'The Dev.to API Key to be used for authentication.'
+outputs:
+  id:
+    description: 'The ID of the generated article'
 runs:
   using: 'node12'
   main: 'index.js'
