@@ -1,0 +1,5 @@
+name: Dev Post
+description: Write and post to Dev.to
+runs:
+  using: 'node12'
+  main: 'index.js'
