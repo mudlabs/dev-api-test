@@ -10,10 +10,10 @@
       },
       body: JSON.stringify({
         article: {
-          title: "Testing API,
+          title: "Testing API",
           published: false,
-          body_markdown: "This is a test pots to dev from github action,
-          tags: [""github", "test", "api"],
+          body_markdown: "This is a test pots to dev from github action",
+          tags: ["github", "test", "api"],
           series: "Api Test"
         }
       })
