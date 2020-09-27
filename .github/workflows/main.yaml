@@ -1,0 +1,17 @@
+name: Dev.to
+
+on: 
+  push:
+
+env:
+ token: ${{ secrets.DEV_TOKEN }}
+ 
+jobs:
+  post:
+    name: Post to Dev
+    id: post
+    steps:
+      - uses: actions/checkout@v2
+      - name: Write Post
+        id: write
+        uses: ./.github/actions/dev
