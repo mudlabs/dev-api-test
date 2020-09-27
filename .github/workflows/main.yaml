@@ -8,8 +8,8 @@ env:
  
 jobs:
   post:
+    runs-on: ubuntu-latest
     name: Post to Dev
-    id: post
     steps:
       - uses: actions/checkout@v2
       - name: Write Post
