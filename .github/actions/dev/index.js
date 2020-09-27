@@ -13,7 +13,7 @@ const unirest = require("unirest");
         "title": "Hello, World!",
         "published": false,
         "body_markdown": "Hello DEV, this is my first post",
-        "tag_list": "discuss, help",
+        "tags": ["discuss", "help"],
         "series": "Hello series",
       });
     console.log(post.body);
