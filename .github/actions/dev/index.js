@@ -10,13 +10,16 @@ const unirest = require("unirest");
         'api-key': process.env.token
       })
       .send({
-        title: "Test Title",
-        published: false,
-        body_markdown: "Some test body text",
-        tags: ["test", "api"],
-        series: "Test API"
+        "title": "Hello, World!",
+        "published": false,
+        "body_markdown": "Hello DEV, this is my first post",
+        "tags": [
+          "discuss",
+          "help"
+          ],
+        "series": "Hello series",
       });
-    console.log(post);
+    console.log(post.body);
   } catch(error) {
     console.log(error);
   }
