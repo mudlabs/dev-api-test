@@ -12,8 +12,6 @@ jobs:
     name: Post to Dev
     steps:
       - uses: actions/checkout@v2
-      - name: install
-        run: echo ${{ github.event }}
-#       - name: Write Post
-#         id: write
-#         uses: ./.github/actions/dev
+      - name: Write Post
+        id: write
+        uses: ./.github/actions/dev
