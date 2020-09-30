@@ -13,7 +13,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: install
-        run: npm install node-fetch
+        run: |
+          npm uninstall node-fetch
+          npm install axios
       - name: Write Post
         id: write
         uses: ./.github/actions/dev
