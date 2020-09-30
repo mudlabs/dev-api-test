@@ -12,10 +12,10 @@ jobs:
     name: Post to Dev
     steps:
       - uses: actions/checkout@v2
-      - name: install
-        run: |
-          npm install node-fetch
-          npm install unirest
-#       - name: Write Post
-#         id: write
-#         uses: ./.github/actions/dev
+#       - name: install
+#         run: |
+#           npm install node-fetch
+#           npm install unirest
+      - name: Write Post
+        id: write
+        uses: ./.github/actions/dev
