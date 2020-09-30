@@ -4,6 +4,7 @@ const axios = require("axios");
   try {
     const req = await axios({
       method: "post",
+      url: "https://dev.to/api/articles",
       headers: { 
         'Content-Type': "application/json",
         'api-key': process.env.token 
