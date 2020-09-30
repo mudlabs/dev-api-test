@@ -2,7 +2,7 @@ const axios = require("axios");
 
 (async function(){
   try {
-    const req = await axios(
+    const req = await axios({
       method: "post",
       headers: { 
         'Content-Type': "application/json",
@@ -15,7 +15,7 @@ const axios = require("axios");
         tags: ["javascript", "discuss"],
         series: "API"
       }
-    );
+    });
     console.log(req);
   } catch(error) {
      console.log(error);
