@@ -10,11 +10,13 @@ const axios = require("axios");
         'api-key': process.env.token 
       },
       data: {
-        title: "Hello Dev",
-        published: false,
-        body_markdown: "Helloe Dev.to, this is my first post.",
-        tags: ["javascript", "discuss"],
-        series: "API"
+        article: {
+          title: "Hello Dev",
+          published: false,
+          body_markdown: "Helloe Dev.to, this is my first post.",
+          tags: ["javascript", "discuss"],
+          series: "API"
+        }
       }
     });
     console.log(req);
