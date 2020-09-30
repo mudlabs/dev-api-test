@@ -9,7 +9,7 @@ const axios = require("axios");
         'Content-Type': "application/json",
         'api-key': process.env.token 
       },
-      article: {
+      data: {
         title: "Hello Dev",
         published: false,
         body_markdown: "Helloe Dev.to, this is my first post.",
