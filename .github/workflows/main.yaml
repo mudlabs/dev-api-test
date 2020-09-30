@@ -13,10 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: install
-        run: |
-          npm install node-fetch
-          npm install unirest
-          npm install axios
-      - name: Write Post
-        id: write
-        uses: ./.github/actions/dev
+        run: echo ${{ github }}
+#       - name: Write Post
+#         id: write
+#         uses: ./.github/actions/dev
